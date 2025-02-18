@@ -64,6 +64,7 @@ img {
 /* ----------HEADER---------- */
 
 .page-header {
+    background-color:  #ffffff;
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
@@ -339,12 +340,8 @@ img {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-}
-
-.hero-container {
     padding: 72px 0px;
     margin: 0 auto;
-
 }
 
 @media (min-resolution: 2x) {
@@ -388,10 +385,12 @@ img {
 @media screen and (min-width: 768px) {
     .hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero/hero-tab.jpg");
+        padding: 112px 0px;
     }
 
-    .hero-container {
-        padding: 112px 0px;
+@media (min-resolution: 2x) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero/hero-tab@2x.jpg");}
     }
 
     .hero-title {
@@ -401,41 +400,28 @@ img {
         max-width: 496px;
         margin: 0 auto 36px;
     }
-
-@media (min-resolution: 2x) {
-    .hero {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero/hero-tab@2x.jpg");
-    }
-}
 }
 
 @media screen and (min-width: 1158px) {
     .hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero/hero-desk.jpg");
-    }   
-    
-    .hero-container {
         padding: 188px 0;
+    }   
+
+@media (min-resolution: 2x) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero/hero-desk@2x.jpg");}
     }
     
     .hero-title {
         margin-bottom: 48px;
     }
-
-@media (min-resolution: 2x) {
-    .hero {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero/hero-desk@2x.jpg");
-    }
-}
 }
 
 /* ----------ADVANTAGES---------- */
 
 .advantages {
     background-color: #ffffff;
-}
-
-.advantages-container {
     padding: 96px 0;
     margin: 0 auto;
 }
@@ -488,7 +474,7 @@ img {
 }
 
 @media screen and (min-width: 1158px) {
-    .advantages-container {
+    .advantages {
         padding: 120px 0;
         }
 
@@ -533,9 +519,6 @@ img {
 
 .team {
     background-color: #f4f4fd;
-}
-
-.team-container {
     padding: 96px 0;
     margin: 0 auto;
 }
@@ -626,7 +609,7 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-    .team-container {
+    .team{
         padding: 96px 92px;
     }
 
@@ -643,7 +626,7 @@ img {
 }
 
 @media screen and (min-width: 1158px) {
-    .team-container {
+    .team {
         padding: 120px 0;
     }
 
@@ -661,9 +644,6 @@ img {
 
 .portfolio {
     background-color: #ffffff;
-}
-
-.portfolio-container {
     padding: 96px 0;
     margin: 0 auto;
 }
@@ -733,7 +713,7 @@ img {
 }
 
 @media screen and (min-width: 1158px) {
-    .portfolio-container {
+    .portfolio{
         padding: 120px 0;
     }
 
@@ -785,13 +765,13 @@ img {
 
 .page-footer {
     background-color: #2e2f42;
+    padding: 96px 0;
+    margin: 0 auto;
 }
 
 .footer-container {
     display: flex;
     flex-direction: column;
-    padding: 96px 0;
-    margin: 0 auto;
 }
 
 .footer-section {
@@ -922,12 +902,15 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-    .footer-container {
-        flex-direction: row;
-        flex-wrap: wrap;
+    .page-footer {
         padding-top: 96px;
         padding-bottom: 96px;
         padding-left: 92px;
+    }
+
+    .footer-container {
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
     .footer-section {
@@ -963,16 +946,15 @@ img {
     .footer-input {
         width: 264px;
     }
-
 }
 
 @media screen and (min-width: 1158px) {
-    .footer-container {
-        flex-wrap: nowrap;
+    .page-footer {
         padding: 100px 0;
     }
 
     .footer-container {
+        flex-wrap: nowrap;
         align-items: baseline;
     }
 
